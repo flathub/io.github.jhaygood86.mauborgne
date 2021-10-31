@@ -120,8 +120,8 @@ modules:
     buildsystem: meson
     sources:
     - type: git
-      url: https://github.com/jhaygood86/granite.git
-      commit: fb47761f351d8f7f707785767529e80fd9218a4b
+      url: https://github.com/elementary/granite.git
+      commit: aef56bb9f59d40df26d6132d58148c78ed94fefd
 
   - name: mauborgne
     buildsystem: meson
