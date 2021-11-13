@@ -129,4 +129,4 @@ modules:
     - type: git
       url: https://github.com/jhaygood86/mauborgne.git
       tag: 0.7.0
-      commit: f57b4d5518c88a0fb888a424b3321054d25dda8f
+      commit: ce4f7cbe62f8b68a06975bb6aac432bf6a852d3c
