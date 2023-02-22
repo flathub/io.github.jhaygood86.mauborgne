@@ -1,6 +1,6 @@
 app-id: io.github.jhaygood86.mauborgne
 runtime: org.gnome.Platform
-runtime-version: '41'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: io.github.jhaygood86.mauborgne
 finish-args:
@@ -17,37 +17,21 @@ cleanup:
 - '*.la'
 
 modules:
-  - name: libbaseencode
-    buildsystem: cmake
-    sources:
-    - type: git
-      url: https://github.com/paolostivanin/libbaseencode.git
-      tag: v1.0.11
-      commit: d83ace02e31635c00762053d160e3f147316cc7a
-
   - name: libctop
     buildsystem: cmake
     sources:
     - type: git
       url: https://github.com/paolostivanin/libcotp.git
-      tag: v1.2.3
-      commit: 0bd132db64dd0d762e17696b170c07566374500c
+      tag: v2.0.0
+      commit: c413038ec0491e7286d0c2849b8fe60c7ad75520
 
   - name: libportal
     buildsystem: meson
     sources:
     - type: git
       url: https://github.com/flatpak/libportal.git
-      tag: '0.4'
-      commit: f68764e288ede516d902b131cc4fadded3804059
-
-  - name: libsecret
-    buildsystem: meson
-    sources:
-    - type: git
-      url: https://gitlab.gnome.org/GNOME/libsecret.git
-      tag: 0.20.4
-      commit: 3fe635e64efd4b8dbc9ec3548b0bc8034c7665c4
+      tag: '0.6'
+      commit: 13df0b887a7eb7b0f9b14069561a41f62e813155
 
   - name: json-glib
     buildsystem: meson
@@ -63,8 +47,8 @@ modules:
     sources:
     - type: git
       url: https://github.com/FortAwesome/Font-Awesome.git
-      tag: 5.15.4
-      commit: 7d3d774145ac38663f6d1effc6def0334b68ab7e
+      tag: 6.3.0
+      commit: d02961b018153506364077343b0edcde0a39d27e
 
   - name: elementary-icons
     buildsystem: meson
@@ -128,5 +112,5 @@ modules:
     sources:
     - type: git
       url: https://github.com/jhaygood86/mauborgne.git
-      tag: 0.7.1
+      tag: 0.8.0
       commit: d70b1efc33fb201a1193398230e64cad84ceafd6
