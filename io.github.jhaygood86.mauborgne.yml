@@ -27,6 +27,9 @@ modules:
 
   - name: libportal
     buildsystem: meson
+    config-opts:
+      -Dbackends=gtk3
+      -Ddocs=false
     sources:
     - type: git
       url: https://github.com/flatpak/libportal.git
